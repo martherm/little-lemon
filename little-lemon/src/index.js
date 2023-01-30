@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+<head>
+<meta name="description" content="Little Lemon is a traditional mediterranean restaurant with a modern twist"/>
+<meta name="og:title" content="Little Lemon"/>
+<meta name="og:description" content="Little Lemon is a traditional mediterranean restaurant with a modern twist"/>
+<meta name="og:image" content="Logo"/>
+</head>
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

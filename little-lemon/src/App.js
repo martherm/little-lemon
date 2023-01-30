@@ -1,12 +1,24 @@
 import './App.css';
+import React from "react";
+import Header from './Header'
+import Nav from './Nav';
+import Main from './Main';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        Home page
-      </div>
-      </div>
+      <>
+      <Header>
+      </Header>
+      <Nav>
+      </Nav>
+      <Main>
+
+      </Main>
+      <Footer>
+
+      </Footer>
+      </>
   );
 }
 
