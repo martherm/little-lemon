@@ -1,8 +1,16 @@
-import './App.css';
+
 
 function Footer() {
-  return (<>
-  <h1>Footer</h1>
+    const handleFacebookClick = () => {
+        window.open('https://www.facebook.com', '_blank');
+      };
+    
+      const handleInstagramClick = () => {
+        window.open('https://www.instagram.com', '_blank');
+      };
+  return (
+  <>
+  <footer className="footer">
   <article>
   <h3>Doormat Navigation</h3>
   <ul>
@@ -27,16 +35,19 @@ function Footer() {
     </ul>
     </article>
     <article>
-    <h3>Contact</h3>
+        <h3>Contact</h3>
    <p>Adress</p>
    <p>Phone number</p>
    <p>Email</p>
    </article>
    <article>
     <h3>Social Media</h3>
-    <p>Facebook</p>
-    <p>Instagram</p>
+    <a href="#" onClick={handleFacebookClick}>Facebook</a>
+    <br />
+    <br />
+    <a href="#" onClick={handleInstagramClick}>Instagram</a>
    </article>
+   </footer>
   </>
   );
 }

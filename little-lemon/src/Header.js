@@ -1,11 +1,12 @@
-import './App.css';
+
 import Logo from './Logo .svg';
 
 function Header() {
   return (
     <>
-    <h1>Header</h1>
-    <img src={Logo} alt="Logo"/>
+    <article className='header-container'>
+    <img src={Logo} alt="Logo" className='header'/>
+    </article>
     </>
   );
 }

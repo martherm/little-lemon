@@ -1,9 +1,9 @@
-import './App.css';
+
 
 function Nav() {
   return (
   <>
-  <h1>Nav</h1>
+  <nav className="navbar">
   <ul>
         <li>
             <a href="Home">Home</a>
@@ -24,8 +24,12 @@ function Nav() {
             <a href="Login">Login</a>
         </li>
     </ul>
-  </>
+    </nav>
+    </>
   );
 }
 
 export default Nav;
+
+
+
