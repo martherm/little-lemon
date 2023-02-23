@@ -1,5 +1,3 @@
-
-
 function Footer() {
     const handleFacebookClick = () => {
         window.open('https://www.facebook.com', '_blank');

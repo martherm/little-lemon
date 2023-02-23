@@ -13,7 +13,7 @@ const HeroSection = () => {
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum purus sapien, nec fermentum quam condimentum ac. Nullam semper dolor nec quam cursus, eu dictum quam mattis. Maecenas eu condimentum est, in porta leo. Sed rutrum porttitor auctor.</p>
     <button>Reserve a table </button>
     </article>
-    <img src={restauranfood} alt="hero-image" className='hero-image'/>
+    <img src={restauranfood} alt="" className='hero-image'/>
 </section>
 </>
 );
@@ -68,12 +68,10 @@ const SpecialsPreview = ({ specialsData }) => {
         coworkers.
       </p>
       </article>
-    <img src={MarioandAdrianA} alt="about-image" className='about-image'/>
-</section>
-  );
+    <img src={MarioandAdrianA} alt="" className='about-image'/>
+    </section>
+    );
 };
-
-
   {/*const BottomNavBar = () => (
     <nav className="bottom-nav-bar">
       <a href="#about">About</a>
@@ -82,7 +80,6 @@ const SpecialsPreview = ({ specialsData }) => {
     </nav>
   );*/}
 
-  
 const Home = () => {
     return(
     <div className="home">
