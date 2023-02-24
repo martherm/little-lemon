@@ -2,21 +2,31 @@ import restauranfood from './restauranfood.jpg';
 import MarioandAdrianA from './MarioandAdrianA.jpg';
 import specialsData from './SpecialsData';
 import TestimonialsData from './TestimonialsData';
+import { useNavigate} from "react-router-dom";
+
 
 const HeroSection = () => {
-    return (
-        <>
-<section className="hero">
-<article className='hero-text'>
-    <h1>Little Lemon</h1>
-    <h3>Chicago</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum purus sapien, nec fermentum quam condimentum ac. Nullam semper dolor nec quam cursus, eu dictum quam mattis. Maecenas eu condimentum est, in porta leo. Sed rutrum porttitor auctor.</p>
-    <button>Reserve a table </button>
-    </article>
-    <img src={restauranfood} alt="" className='hero-image'/>
-</section>
-</>
-);
+  const navigate = useNavigate();
+
+  const handleReservationClick = () => {
+    navigate('/reservation');
+  };
+
+  return (
+    <section className="hero">
+      <article className="hero-text">
+        <h1>Little Lemon</h1>
+        <h3>Chicago</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum purus sapien, nec fermentum quam
+          condimentum ac. Nullam semper dolor nec quam cursus, eu dictum quam mattis. Maecenas eu condimentum est,
+          in porta leo. Sed rutrum porttitor auctor.
+        </p>
+        <button onClick={handleReservationClick}>Reserve a table</button>
+      </article>
+      <img src={restauranfood} alt="" className="hero-image" />
+    </section>
+  );
 };
 
 const SpecialsPreview = ({ specialsData }) => {

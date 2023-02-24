@@ -58,7 +58,6 @@ function BookingPage() {
 
   return (
     <div className="bookingpage">
-      <h1>BOOKING PAGE</h1>
       <BookingForm
         date={date}
         setDate={setDate}
